@@ -7,6 +7,7 @@
       <Entrepreneurship />
       <SkillsMatrix />
       <Experience />
+      <Education />
       <Projects />
       <Contact />
     </main>
@@ -21,6 +22,7 @@ import About from './components/About.vue'
 import Entrepreneurship from './components/Entrepreneurship.vue'
 import SkillsMatrix from './components/SkillsMatrix.vue'
 import Experience from './components/Experience.vue'
+import Education from './components/Education.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
