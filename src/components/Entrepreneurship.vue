@@ -7,6 +7,7 @@
       </h2>
 
       <div class="comimmo-pitch" v-motion-slide-visible-once-right>
+        <p class="project-intro">Pendant mon temps personnel, j'ai développé une application qui sert à faciliter la vie professionnelle des agents immobiliers. Cette application est disponible sur iOS et Android.</p>
         <p class="pitch-intro">Vous êtes agent immobilier, mandataire ou conseiller indépendant ?</p>
         <p class="pitch-main">Fini la paperasse, les calculs compliqués et les pertes de temps : <strong>ComImmo s'occupe de tout.</strong></p>
         <p class="pitch-details">Une seule application pour gérer vos ventes, calculer vos commissions, créer vos factures et organiser vos rendez-vous. Tout est centralisé, automatisé et pensé pour vous faire gagner du temps au quotidien.</p>
@@ -88,6 +89,13 @@ const values = [
 .comimmo-pitch {
   margin: 2rem 0 3.5rem;
   max-width: 800px;
+}
+
+.project-intro {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .pitch-intro {
