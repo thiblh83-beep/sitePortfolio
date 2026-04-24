@@ -3,22 +3,20 @@
     <div class="section-overlay"></div>
     <div class="container">
       <h2 class="section-title" v-motion-slide-visible-once-left>
-        <span class="gradient-text">Entrepreneuriat</span>
+        <span class="gradient-text">{{ $t('entrepreneurship.title') }}</span>
       </h2>
 
       <div class="comimmo-intro" v-motion-slide-visible-once-right>
         <div class="pitch-header">
-          <div class="brand-badge">🚀 LE PITCH GLOBAL</div>
-          <h3 class="comimmo-title">ComImmo : Votre cockpit immobilier.</h3>
+          <div class="brand-badge">{{ $t('entrepreneurship.pitch_badge') }}</div>
+          <h3 class="comimmo-title">{{ $t('entrepreneurship.pitch_title') }}</h3>
           <p class="project-intro">
-            L’application "Mobile First" sécurisée qui remplace définitivement les tableaux Excel et les carnets volants. 
-            Que vous soyez un agent gérant ses propres commissions ou un directeur d'agence pilotant ses équipes, 
-            ComImmo centralise tout votre métier dans votre poche.
+            {{ $t('entrepreneurship.pitch_desc') }}
           </p>
         </div>
 
         <div class="pillars-grid">
-          <div v-for="pillar in pillars" :key="pillar.title" class="pillar-card glass-card">
+          <div v-for="pillar in translatedPillars" :key="pillar.title" class="pillar-card glass-card">
             <component :is="pillar.icon" :size="32" class="pillar-icon" />
             <h4>{{ pillar.title }}</h4>
             <p>{{ pillar.desc }}</p>
@@ -34,31 +32,31 @@
               <UserIcon :size="24" />
             </div>
             <div class="tier-info">
-              <h4>CÔTÉ AGENT COMMERCIAL</h4>
+              <h4>{{ $t('entrepreneurship.agent.title') }}</h4>
             </div>
           </div>
           
           <div class="features-list">
             <div class="feature-group">
-              <h5>1. Gestion des Ventes</h5>
+              <h5>{{ $t('entrepreneurship.agent.f1_title') }}</h5>
               <ul>
-                <li><strong>Pipeline :</strong> Visualisez vos ventes "En cours" et "Facturées".</li>
-                <li><strong>Fiches :</strong> Centralisez dossiers, dates et participants.</li>
-                <li><strong>Agenda :</strong> Rendez-vous synchronisés à votre calendrier.</li>
+                <li v-html="$t('entrepreneurship.agent.f1_l1')"></li>
+                <li v-html="$t('entrepreneurship.agent.f1_l2')"></li>
+                <li v-html="$t('entrepreneurship.agent.f1_l3')"></li>
               </ul>
             </div>
             <div class="feature-group">
-              <h5>2. Calcul Auto</h5>
+              <h5>{{ $t('entrepreneurship.agent.f2_title') }}</h5>
               <ul>
-                <li><strong>Transparence :</strong> Calcul automatique de votre part nette.</li>
-                <li><strong>Suivi :</strong> Historique précis de vos revenus mensuels.</li>
+                <li v-html="$t('entrepreneurship.agent.f2_l1')"></li>
+                <li v-html="$t('entrepreneurship.agent.f2_l2')"></li>
               </ul>
             </div>
             <div class="feature-group">
-              <h5>3. Productivité</h5>
+              <h5>{{ $t('entrepreneurship.agent.f3_title') }}</h5>
               <ul>
-                <li><strong>Zéro paperasse :</strong> Factures PDF générées en deux clics.</li>
-                <li><strong>Partage :</strong> Envoi direct depuis votre téléphone.</li>
+                <li v-html="$t('entrepreneurship.agent.f3_l1')"></li>
+                <li v-html="$t('entrepreneurship.agent.f3_l2')"></li>
               </ul>
             </div>
           </div>
@@ -71,32 +69,31 @@
               <BuildingIcon :size="24" />
             </div>
             <div class="tier-info">
-              <h4>CÔTÉ PATRON D'AGENCE</h4>
+              <h4>{{ $t('entrepreneurship.agency.title') }}</h4>
             </div>
           </div>
           
           <div class="features-list">
             <div class="feature-group">
-              <h5>1. Pilotage Global</h5>
+              <h5>{{ $t('entrepreneurship.agency.f1_title') }}</h5>
               <ul>
-                <li><strong>Le pouls :</strong> Dashboard CA et activité récente en un clin d'œil.</li>
-                <li><strong>Objectifs :</strong> Jauges de progression annuelles détaillées.</li>
-                <li><strong>Évolution :</strong> Graphiques de croissance analytiques.</li>
+                <li v-html="$t('entrepreneurship.agency.f1_l1')"></li>
+                <li v-html="$t('entrepreneurship.agency.f1_l2')"></li>
+                <li v-html="$t('entrepreneurship.agency.f1_l3')"></li>
               </ul>
             </div>
             <div class="feature-group">
-              <h5>2. Management</h5>
+              <h5>{{ $t('entrepreneurship.agency.f2_title') }}</h5>
               <ul>
-                <li><strong>Liaison :</strong> Rattachement via "Code Employé" instantané.</li>
-                <li><strong>Vue d'ensemble :</strong> Gestion des participations croisées.</li>
-                <li><strong>Stats :</strong> Fiches perfs détaillées par collaborateur.</li>
+                <li v-html="$t('entrepreneurship.agency.f2_l1')"></li>
+                <li v-html="$t('entrepreneurship.agency.f2_l2')"></li>
               </ul>
             </div>
             <div class="feature-group">
-              <h5>3. Reporting</h5>
+              <h5>{{ $t('entrepreneurship.agency.f3_title') }}</h5>
               <ul>
-                <li><strong>Exploitation :</strong> Exports PDF/Excel pour vos réunions.</li>
-                <li><strong>Bilans :</strong> Rapports annuels et performance individuelle.</li>
+                <li v-html="$t('entrepreneurship.agency.f3_l1')"></li>
+                <li v-html="$t('entrepreneurship.agency.f3_l2')"></li>
               </ul>
             </div>
           </div>
@@ -106,8 +103,8 @@
       <!-- QR Section -->
       <div class="qr-cta glass-card" v-motion-slide-visible-once-bottom>
         <div class="qr-content">
-          <h4>Prêt à décoller ?</h4>
-          <p>Scannez pour découvrir ComImmo sur iOS et Android</p>
+          <h4>{{ $t('entrepreneurship.qr_title') }}</h4>
+          <p>{{ $t('entrepreneurship.qr_desc') }}</p>
         </div>
         <div class="qr-box">
           <img src="/src/assets/comimmo-qr.png" alt="QR Code ComImmo" class="qr-img" />
@@ -118,6 +115,8 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { 
   ZapIcon, 
   ShieldCheckIcon, 
@@ -127,12 +126,14 @@ import {
   BuildingIcon
 } from 'lucide-vue-next'
 
-const pillars = [
-  { title: 'Productivité', desc: "Libère l'agent des tâches administratives.", icon: ZapIcon },
-  { title: 'Transparence', desc: 'Vision claire des revenus pour les agents.', icon: ShieldCheckIcon },
-  { title: 'Gain de temps', desc: 'Automatisation des rapports et de la facturation.', icon: ClockIcon },
-  { title: 'Modernisation', desc: 'Interface Mobile First sécurisée et intuitive.', icon: TrendingUpIcon }
-]
+const { t } = useI18n()
+
+const translatedPillars = computed(() => [
+  { title: t('entrepreneurship.pillars.p1.title'), desc: t('entrepreneurship.pillars.p1.desc'), icon: ZapIcon },
+  { title: t('entrepreneurship.pillars.p2.title'), desc: t('entrepreneurship.pillars.p2.desc'), icon: ShieldCheckIcon },
+  { title: t('entrepreneurship.pillars.p3.title'), desc: t('entrepreneurship.pillars.p3.desc'), icon: ClockIcon },
+  { title: t('entrepreneurship.pillars.p4.title'), desc: t('entrepreneurship.pillars.p4.desc'), icon: TrendingUpIcon }
+])
 </script>
 
 <style scoped>

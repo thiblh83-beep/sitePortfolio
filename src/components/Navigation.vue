@@ -6,18 +6,22 @@
         Thibault
       </div>
       <div class="nav-links">
-        <a href="#experience">Expérience</a>
-        <a href="#education">Formation</a>
-        <a href="#projets">Projets</a>
-        <a href="#entrepreneuriat">Entrepreneuriat</a>
+        <a href="#experience">{{ $t('nav.experience') }}</a>
+        <a href="#education">{{ $t('nav.education') }}</a>
+        <a href="#projets">{{ $t('nav.projects') }}</a>
+        <a href="#entrepreneuriat">{{ $t('nav.entrepreneurship') }}</a>
         <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="nav-social" title="LinkedIn">
           <LinkedinIcon :size="20" />
         </a>
-            <a href="/sitePortfolio/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
-              <FileTextIcon :size="18" />
-              CV (PDF)
-            </a>
-        <a href="#contact" class="nav-cta">Contact</a>
+        <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv">
+          <FileTextIcon :size="18" />
+          {{ $t('nav.cv') }}
+        </a>
+        <a href="#contact" class="nav-cta">{{ $t('nav.contact') }}</a>
+        
+        <button @click="toggleLocale" class="lang-toggle">
+          {{ locale.toUpperCase() }}
+        </button>
       </div>
     </div>
   </nav>
@@ -25,9 +29,16 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { LinkedinIcon, FileTextIcon } from 'lucide-vue-next'
 
+const { locale } = useI18n()
 const scrolled = ref(false)
+const cvUrl = '/sitePortfolio/CV_Thibault_LHERITIER.pdf'
+
+const toggleLocale = () => {
+  locale.value = locale.value === 'fr' ? 'en' : 'fr'
+}
 
 const handleScroll = () => {
   scrolled.value = window.scrollY > 50
@@ -126,6 +137,30 @@ nav {
   color: white !important;
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 119, 181, 0.3);
+}
+
+.lang-toggle {
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-color);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

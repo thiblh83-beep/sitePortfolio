@@ -1,0 +1,189 @@
+{
+    "nav": {
+        "experience": "Expérience",
+        "education": "Formation",
+        "projects": "Projets",
+        "entrepreneurship": "Entrepreneuriat",
+        "cv": "CV (PDF)",
+        "contact": "Contact"
+    },
+    "hero": {
+        "status": "Disponible à partir de Septembre 2026",
+        "title_thibault": "Thibault",
+        "title_lheritier": "L'HÉRITIER",
+        "subtitle": "Ingénieur Systèmes Embarqués & Communicants",
+        "passion": "Passionné par la défense, l'aéronautique et la robotique.",
+        "search": "À la recherche de nouveaux défis techniques en tant qu'ingénieur système embarqué",
+        "cv_btn": "Mon CV (PDF)",
+        "contact_btn": "Me contacter"
+    },
+    "about": {
+        "title": "À propos de <span>moi :</span>",
+        "expertise_title": "Expertise",
+        "vision_title": "Ma <span>vision :</span>",
+        "p1": "Je suis <strong>Thibault L'Héritier</strong>, Ingénieur en Systèmes Embarqués. Les projets que j'ai menés sont principalement des projets de développement de simulateurs et d'intégration de systèmes critiques dans le milieu de l'aéronautique de défense.",
+        "p2": "Mon expertise se situe à la charnière entre le matériel et le logiciel : je conçois aussi bien les architectures matérielles que les couches logicielles pour créer des systèmes complets et cohérents.",
+        "p3": "Rigoureux et méthodique, mon approche repose sur la fiabilité et la maîtrise des contraintes temporelles. Je m'attache à comprendre le fonctionnement intime des équipements (rétro-ingénierie) pour développer des solutions robustes, capables de s'interfacer avec des technologies existantes.",
+        "vision_p1": "À travers ce parcours, je recherche un poste dans la conception et le développement de systèmes critiques, me permettant de mettre en pratique ma double compétence matérielle et logicielle tout en continuant à relever des défis techniques complexes.",
+        "vision_p2": "Je souhaite contribuer à l'élaboration de solutions technologiques performantes, qu'il s'agisse de simulateurs, d'outils de test ou d'architectures embarquées complètes.",
+        "vision_p3_expanded": "Ma motivation profonde réside dans l'innovation technologique et la rigueur méthodique de l'ingénierie. Je porte un intérêt tout particulier aux secteurs de <strong>l'aéronautique, de l'automobile et de la robotique</strong>, là où la précision et la fiabilité sont primordiales."
+    },
+    "experience": {
+        "title": "Mon <span>Parcours</span>",
+        "exp1": {
+            "title": "Apprenti Ingénieur - Pôle Conception",
+            "company": "Atelier Industriel de l'Aéronautique de Cuers-Pierrefeu",
+            "desc": "Alternance au sein du pôle conception systèmes embarqués.",
+            "m1": "Conception et développement de deux simulateurs de sous-systèmes pour un avion de surveillance maritime (Hawkeye)",
+            "m2": "Modélisation et implémentation des fonctionnalités en langage C++",
+            "m3": "Participation aux phases de conception, de test et de validation"
+        },
+        "exp2": {
+            "title": "Mobilité à l'International",
+            "company": "PCI Pharma Services - Dundalk, Irlande",
+            "desc": "Expérience internationale en ingénierie et support informatique.",
+            "m1": "Participation aux activités d'ingénierie et de support informatique",
+            "m2": "Support aux installations et aux systèmes informatiques industriels",
+            "m3": "Développement d'un programme de gestion et de traitement de données en C++"
+        },
+        "exp3": {
+            "title": "Technicien Réseaux (Alternance)",
+            "company": "Orange - Toulon",
+            "desc": "Maintenance et optimisation des réseaux de télécommunication.",
+            "m1": "Pilotage et gestion des incidents sur les réseaux cuivre et fibre",
+            "m2": "Analyse et suivi des dysfonctionnements réseau",
+            "m3": "Développement d'un outil d'optimisation de l'accès aux données (langages web)"
+        }
+    },
+    "education": {
+        "title": "Ma <span>Formation</span>",
+        "edu1": {
+            "date": "2023 - 2026",
+            "title": "Ingénieur systèmes embarqués & communicants",
+            "school": "ISEN Yncréa Méditerranée - Toulon",
+            "desc": "Formation d'ingénieur par apprentissage au sein de l'AIA de Cuers-Pierrefeu."
+        },
+        "edu2": {
+            "date": "2021 - 2023",
+            "title": "DUT GEII",
+            "school": "IUT Université de Toulon",
+            "desc": "Génie Électrique et Informatique Industrielle.",
+            "details": "Électronique, automatismes, systèmes industriels (alternance Orange)."
+        },
+        "edu3": {
+            "date": "2018 - 2021",
+            "title": "Baccalauréat Général",
+            "school": "Lycée Paul Langevin, 83500 La Seyne-sur-mer",
+            "desc": "Mathématiques & Physique – option maths expertes.",
+            "details": "Mention Assez Bien."
+        }
+    },
+    "projects": {
+        "title": "Projets <span>Sélectionnés</span>",
+        "details_btn": "Détails Techniques",
+        "back_btn": "Cliquez pour revenir",
+        "hint": "Cliquez pour en savoir plus",
+        "iff": {
+            "tag": "Simulateur IFF / Hawkeye",
+            "desc": "Simulation du sous-système IFF pour l'affichage des pistes (avions, bateaux) détectées par l'aéronef en situation tactique réelle.",
+            "h1": "Affichage des pistes provenant d'un logiciel de simulation tactique",
+            "h2": "Intégration des modes IFF reproduisant fidèlement le fonctionnement réel",
+            "h3": "Représentation maximale de la réalité tactique pour l'entraînement",
+            "details": "L'IFF sert à simuler le sous-système qui affiche les pistes (avions, bateaux ou autres) détectées dans l'avion. Nous affichons les pistes provenant d'un logiciel de simulation pour créer une situation tactique réelle. Le projet inclut l'intégration des différents modes reprenant à l'identique le fonctionnement du sous-système réel pour un entraînement optimal sur la plateforme PFS."
+        },
+        "ifpm": {
+            "tag": "Simulateur IFPM / Hawkeye",
+            "desc": "Simulation du sous-système IFPM avec IHM pour l'injection de pannes (IFF, Radar, Comm) par l'instructeur.",
+            "h1": "Interface instructeur pour la création de situations dégradées",
+            "h2": "Envoi de signaux au calculateur pour un affichage identique au réel",
+            "h3": "Entraînement haute-fidélité sur la plateforme PFS",
+            "details": "L'IFPM sert à simuler le sous-système de gestion de puissance et de pannes. Via une IHM dédiée, l'instructeur peut sélectionner des pannes sur différents systèmes (IFF, Radar, Comm) pour simuler une situation tactique dégradée. Le simulateur envoie des signaux au calculateur de bord pour que celui-ci affiche les pannes comme si elles étaient réelles."
+        }
+    },
+    "entrepreneurship": {
+        "title": "Entrepreneuriat",
+        "pitch_badge": "🚀 LE PITCH GLOBAL",
+        "pitch_title": "ComImmo : Votre cockpit immobilier.",
+        "pitch_desc": "L’application \"Mobile First\" sécurisée qui remplace définitivement les tableaux Excel et les carnets volants. Que vous soyez un agent gérant ses propres commissions ou un directeur d'agence pilotant ses équipes, ComImmo centralise tout votre métier dans votre poche.",
+        "pillars": {
+            "p1": {
+                "title": "Productivité",
+                "desc": "Libère l'agent des tâches administratives."
+            },
+            "p2": {
+                "title": "Transparence",
+                "desc": "Vision claire des revenus pour les agents."
+            },
+            "p3": {
+                "title": "Gain de temps",
+                "desc": "Automatisation des rapports et de la facturation."
+            },
+            "p4": {
+                "title": "Modernisation",
+                "desc": "Interface Mobile First sécurisée et intuitive."
+            }
+        },
+        "agent": {
+            "title": "CÔTÉ AGENT COMMERCIAL",
+            "f1_title": "1. Gestion des Ventes",
+            "f1_l1": "<strong>Pipeline :</strong> Visualisez vos ventes \"En cours\" et \"Facturées\".",
+            "f1_l2": "<strong>Fiches :</strong> Centralisez dossiers, dates et participants.",
+            "f1_l3": "<strong>Agenda :</strong> Rendez-vous synchronisés à votre calendrier.",
+            "f2_title": "2. Calcul Auto",
+            "f2_l1": "<strong>Transparence :</strong> Calcul automatique de votre part nette.",
+            "f2_l2": "<strong>Suivi :</strong> Historique précis de vos revenus mensuels.",
+            "f3_title": "3. Productivité",
+            "f3_l1": "<strong>Zéro paperasse :</strong> Factures PDF générées en deux clics.",
+            "f3_l2": "<strong>Partage :</strong> Envoi direct depuis votre téléphone."
+        },
+        "agency": {
+            "title": "CÔTÉ PATRON D'AGENCE",
+            "f1_title": "1. Pilotage Global",
+            "f1_l1": "<strong>Le pouls :</strong> Dashboard CA et activité récente en un clin d'œil.",
+            "f1_l2": "<strong>Objectifs :</strong> Jauges de progression annuelles détaillées.",
+            "f1_l3": "<strong>Évolution :</strong> Graphiques de croissance analytiques.",
+            "f2_title": "2. Management",
+            "f2_l1": "<strong>Liaison :</strong> Rattachement via \"Code Employé\" instantané.",
+            "f2_l2": "<strong>Vue d'ensemble :</strong> Gestion des participations croisées.",
+            "f3_title": "3. Reporting",
+            "f3_l1": "<strong>Exploitation :</strong> Exports PDF/Excel pour vos réunions.",
+            "f3_l2": "<strong>Bilans :</strong> Rapports annuels et performance individuelle."
+        },
+        "qr_title": "Prêt à décoller ?",
+        "qr_desc": "Scannez pour découvrir ComImmo sur iOS et Android"
+    },
+    "skills": {
+        "title": "Matrice de <span>Compétences</span>",
+        "col1_title": "Mes savoirs (outils)",
+        "col1_s1_title": "Architecture Systèmes & SoC",
+        "col1_s1_desc": "Compréhension des structures hétérogènes (ARM/FPGA) et des interactions PS/PL sur Xilinx Zynq.",
+        "col1_s2_title": "Protocoles & Bus Avioniques",
+        "col1_s2_desc": "Maîtrise des couches physiques et protocolaires : Série, Synchrone, Full-Duplex.",
+        "col1_s3_title": "Ingénierie de Simulation",
+        "col1_s3_desc": "Principes de centralisation des états (IFPM) et simulation Hardware-in-the-Loop.",
+        "col2_title": "Mes savoir-faire (actions)",
+        "col2_s1_title": "Conception & Développement",
+        "col2_s1_desc": "Programmation en <strong>VHDL (FPGA)</strong> et <strong>C/C++ (Logiciel/IHM)</strong> avec gestion des contraintes temps réel dur.",
+        "col2_s2_title": "Rétro-ingénierie & Audit",
+        "col2_s2_desc": "Analyse de systèmes non documentés à l'oscilloscope pour décoder des protocoles et assurer le leurrage numérique.",
+        "col2_s3_title": "Pilotage & Management",
+        "col2_s3_desc": "Gestion de projet industriel (10 mois) en autonomie et tutorat fonctionnel.",
+        "col3_title": "Mes savoir-être (personnalité)",
+        "col3_s1_title": "Rigueur & Précision",
+        "col3_s1_desc": "Capacité d'analyse méthodique pour respecter les exigences temporelles critiques (< 2,5 µs).",
+        "col3_s2_title": "Esprit d'analyse",
+        "col3_s2_desc": "Curiosité technique et ténacité face aux verrous technologiques complexes.",
+        "col3_s3_title": "Adaptabilité & Pédagogie",
+        "col3_s3_desc": "Capacité à vulgariser des concepts techniques pour collaborer avec divers corps de métier."
+    },
+    "contact": {
+        "title": "Discutons ensemble de notre <span>future collaboration...</span>",
+        "desc": "Je suis actuellement à la recherche de nouveaux défis techniques. Disponible à partir de Septembre 2026.",
+        "region": "Région Toulonnaise",
+        "cv_btn": "Télécharger mon CV (PDF)",
+        "message_btn": "M'envoyer un message"
+    },
+    "footer": {
+        "rights": "© 2026 Thibault L'HÉRITIER. Tous droits réservés."
+    }
+}

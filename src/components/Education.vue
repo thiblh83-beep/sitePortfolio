@@ -6,13 +6,13 @@
         v-motion
         :initial="{ opacity: 0, x: -50 }"
         :enter="{ opacity: 1, x: 0 }"
+        v-html="$t('education.title')"
       >
-        Ma <span class="gradient-text">Formation</span>
       </h2>
 
       <div class="education-timeline">
         <div 
-          v-for="(edu, index) in education" 
+          v-for="(edu, index) in translatedEducation" 
           :key="index"
           class="edu-item"
           v-motion-slide-visible-once-bottom
@@ -43,32 +43,36 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { ExternalLinkIcon } from 'lucide-vue-next'
 
-const education = [
+const { t } = useI18n()
+
+const translatedEducation = computed(() => [
   {
-    date: '2023 - 2026',
-    title: 'Ingénieur systèmes embarqués & communicants',
-    school: 'ISEN Yncréa Méditerranée - Toulon',
+    date: t('education.edu1.date'),
+    title: t('education.edu1.title'),
+    school: t('education.edu1.school'),
     link: 'https://isen-mediterranee.fr/formation/cycle-ingenieur-par-apprentissage/',
-    description: 'Formation d\'ingénieur par apprentissage au sein de l\'AIA de Cuers-Pierrefeu.'
+    description: t('education.edu1.desc')
   },
   {
     date: '2021 - 2023',
-    title: 'DUT GEII',
-    school: 'IUT Université de Toulon',
+    title: t('education.edu2.title'),
+    school: t('education.edu2.school'),
     link: 'https://iut.univ-tln.fr/BUT-Genie-Electrique-et-Informatique-Industrielle-GEII.html',
-    description: 'Génie Électrique et Informatique Industrielle.',
-    details: 'Électronique, automatismes, systèmes industriels (alternance Orange).'
+    description: t('education.edu2.desc'),
+    details: t('education.edu2.details')
   },
   {
     date: '2018 - 2021',
-    title: 'Baccalauréat Général',
-    school: 'Lycée Paul Langevin, 83500 La Seyne-sur-mer',
-    description: 'Mathématiques & Physique – option maths expertes.',
-    details: 'Mention Assez Bien.'
+    title: t('education.edu3.title'),
+    school: t('education.edu3.school'),
+    description: t('education.edu3.desc'),
+    details: t('education.edu3.details')
   }
-]
+])
 </script>
 
 <style scoped>

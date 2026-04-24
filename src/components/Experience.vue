@@ -8,13 +8,13 @@
         v-motion
         :initial="{ opacity: 0, x: -50 }"
         :enter="{ opacity: 1, x: 0 }"
+        v-html="$t('experience.title')"
       >
-        Mon <span class="gradient-text">Parcours</span>
       </h2>
 
       <div class="timeline">
         <div 
-          v-for="(exp, index) in experiences" 
+          v-for="(exp, index) in translatedExperiences" 
           :key="index"
           class="timeline-item"
           v-motion-slide-visible-once-bottom
@@ -42,49 +42,53 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import aiaLogo from '../assets/aia-logo.png'
 import pciLogo from '../assets/pci-logo.jpg'
 import orangeLogo from '../assets/orange-logo.png'
 import roboticsBg from '../assets/robotics-bg.png'
 
-const experiences = [
+const { t } = useI18n()
+
+const translatedExperiences = computed(() => [
   {
     date: '2023 - Juin 2026',
-    title: 'Apprenti Ingénieur - Pôle Conception',
-    company: "Atelier Industriel de l'Aéronautique de Cuers-Pierrefeu",
+    title: t('experience.exp1.title'),
+    company: t('experience.exp1.company'),
     logo: aiaLogo,
-    description: "Alternance au sein du pôle conception systèmes embarqués.",
+    description: t('experience.exp1.desc'),
     missions: [
-      "Conception et développement de deux simulateurs de sous-systèmes pour un avion de surveillance maritime (Hawkeye)",
-      "Modélisation et implémentation des fonctionnalités en langage C++",
-      "Participation aux phases de conception, de test et de validation"
+      t('experience.exp1.m1'),
+      t('experience.exp1.m2'),
+      t('experience.exp1.m3')
     ]
   },
   {
     date: 'Avril 2025 - Juillet 2025',
-    title: 'Mobilité à l\'International',
-    company: 'PCI Pharma Services - Dundalk, Ireland',
+    title: t('experience.exp2.title'),
+    company: t('experience.exp2.company'),
     logo: pciLogo,
-    description: "Expérience internationale en ingénierie et support informatique.",
+    description: t('experience.exp2.desc'),
     missions: [
-      "Participation aux activités d'ingénierie et de support informatique",
-      "Support aux installations et aux systèmes informatiques industriels",
-      "Développement d'un programme de gestion et de traitement de données en C++"
+      t('experience.exp2.m1'),
+      t('experience.exp2.m2'),
+      t('experience.exp2.m3')
     ]
   },
   {
     date: '2021 - 2023',
-    title: 'Technicien Réseaux (Alternance)',
-    company: 'Orange - Toulon',
+    title: t('experience.exp3.title'),
+    company: t('experience.exp3.company'),
     logo: orangeLogo,
-    description: "Maintenance et optimisation des réseaux de télécommunication.",
+    description: t('experience.exp3.desc'),
     missions: [
-      "Pilotage et gestion des incidents sur les réseaux cuivre et fibre",
-      "Analyse et suivi des dysfonctionnements réseau",
-      "Développement d'un outil d'optimisation de l'accès aux données (langages web)"
+      t('experience.exp3.m1'),
+      t('experience.exp3.m2'),
+      t('experience.exp3.m3')
     ]
   }
-]
+])
 </script>
 
 <style scoped>

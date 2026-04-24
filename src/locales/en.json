@@ -1,0 +1,189 @@
+{
+    "nav": {
+        "experience": "Experience",
+        "education": "Education",
+        "projects": "Projects",
+        "entrepreneurship": "Entrepreneurship",
+        "cv": "CV (PDF)",
+        "contact": "Contact"
+    },
+    "hero": {
+        "status": "Available from September 2026",
+        "title_thibault": "Thibault",
+        "title_lheritier": "L'HÉRITIER",
+        "subtitle": "Embedded Systems & Communication Engineer",
+        "passion": "Passionate about defense, aeronautics and robotics.",
+        "search": "Looking for new technical challenges as an embedded systems engineer",
+        "cv_btn": "My Resume (PDF)",
+        "contact_btn": "Contact me"
+    },
+    "about": {
+        "title": "About <span>me:</span>",
+        "expertise_title": "Expertise",
+        "vision_title": "My <span>vision:</span>",
+        "p1": "I am <strong>Thibault L'Héritier</strong>, an Embedded Systems Engineer. The projects I've led are mainly related to simulator development and critical systems integration within the defense aeronautics sector.",
+        "p2": "My expertise lies at the intersection of hardware and software: I design both hardware architectures and software layers to create complete and coherent systems.",
+        "p3": "Rigorous and methodical, my approach is based on reliability and mastery of time constraints. I focus on understanding the inner workings of equipment (reverse engineering) to develop robust solutions capable of interfacing with existing technologies.",
+        "vision_p1": "Through this journey, I am seeking a position in the design and development of critical systems, allowing me to apply my dual hardware and software skills while continuing to take on complex technical challenges.",
+        "vision_p2": "I wish to contribute to the development of high-performance technological solutions, whether they be simulators, test tools, or complete embedded architectures.",
+        "vision_p3_expanded": "My core motivation lies in technological innovation and the methodical rigor of engineering. I have a particular interest in the <strong>aeronautics, automotive, and robotics</strong> sectors, where precision and reliability are paramount."
+    },
+    "experience": {
+        "title": "My <span>Journey</span>",
+        "exp1": {
+            "title": "Apprentice Engineer - Design Hub",
+            "company": "Cuers-Pierrefeu Aeronautics Industrial Workshop (AIA)",
+            "desc": "Work-study placement within the embedded systems design department.",
+            "m1": "Design and development of two subsystem simulators for a maritime surveillance aircraft (Hawkeye)",
+            "m2": "Modeling and implementation of functionalities in C++ language",
+            "m3": "Participation in design, testing, and validation phases"
+        },
+        "exp2": {
+            "title": "International Mobility",
+            "company": "PCI Pharma Services - Dundalk, Ireland",
+            "desc": "International experience in engineering and IT support.",
+            "m1": "Participation in engineering activities and IT support",
+            "m2": "Support for industrial IT installations and systems",
+            "m3": "Development of a data management and processing program in C++"
+        },
+        "exp3": {
+            "title": "Network Technician (Work-study)",
+            "company": "Orange - Toulon",
+            "desc": "Maintenance and optimization of telecommunication networks.",
+            "m1": "Incident steering and management on copper and fiber networks",
+            "m2": "Analysis and monitoring of network malfunctions",
+            "m3": "Development of a data access optimization tool (web languages)"
+        }
+    },
+    "education": {
+        "title": "My <span>Education</span>",
+        "edu1": {
+            "date": "2023 - 2026",
+            "title": "Embedded & Communication Systems Engineer",
+            "school": "ISEN Yncréa Méditerranée - Toulon",
+            "desc": "Engineering training through apprenticeship within AIA Cuers-Pierrefeu."
+        },
+        "edu2": {
+            "date": "2021 - 2023",
+            "title": "DUT GEII (Assoc. Degree)",
+            "school": "Toulon University Institute of Technology (IUT)",
+            "desc": "Electrical Engineering and Industrial Computing.",
+            "details": "Electronics, automation, industrial systems (Orange work-study)."
+        },
+        "edu3": {
+            "date": "2018 - 2021",
+            "title": "General Baccalaureate (High School Diploma)",
+            "school": "Paul Langevin High School, 83500 La Seyne-sur-mer",
+            "desc": "Mathematics & Physics – special math option.",
+            "details": "Graduated with Honors (Assez Bien)."
+        }
+    },
+    "projects": {
+        "title": "Selected <span>Projects</span>",
+        "details_btn": "Technical Details",
+        "back_btn": "Click to return",
+        "hint": "Click to learn more",
+        "iff": {
+            "tag": "IFF / Hawkeye Simulator",
+            "desc": "Simulation of the IFF subsystem to display tracks (planes, boats) detected by the aircraft in real tactical situations.",
+            "h1": "Display of tracks from a tactical simulation software",
+            "h2": "Integration of IFF modes identical to behavior of real subsystem",
+            "h3": "Maximum representation of tactical reality for training",
+            "details": "The IFF simulator mimics the subsystem that displays tracks (planes, boats, etc.) detected in the aircraft. We display tracks from a simulation software to recreate a real tactical situation. The project includes the integration of different modes representing identical behavior of the real subsystem for optimal training on the PFS platform."
+        },
+        "ifpm": {
+            "tag": "IFPM / Hawkeye Simulator",
+            "desc": "Simulation of the IFPM subsystem with an HMI for failure injection (IFF, Radar, Comm) by the instructor.",
+            "h1": "Instructor interface for creating degraded situations",
+            "h2": "Signal injection to computer for failure display identical to real",
+            "h3": "High-fidelity training on the PFS platform",
+            "details": "The IFPM simulator mimics the power and failure management subsystem. Through a dedicated HMI, the instructor can select failures on various systems (IFF, Radar, Comm) to simulate a degraded tactical situation. The simulator sends signals to the on-board computer so it displays the failures as if they were real."
+        }
+    },
+    "entrepreneurship": {
+        "title": "Entrepreneurship",
+        "pitch_badge": "🚀 THE GLOBAL PITCH",
+        "pitch_title": "ComImmo: Your real estate cockpit.",
+        "pitch_desc": "The secure \"Mobile First\" application that definitively replaces Excel spreadsheets and loose notebooks. Whether you are an agent managing your own commissions or an agency director leading your teams, ComImmo centralizes your entire profession in your pocket.",
+        "pillars": {
+            "p1": {
+                "title": "Productivity",
+                "desc": "Relieves the agent of administrative tasks."
+            },
+            "p2": {
+                "title": "Transparency",
+                "desc": "Clear view of income for agents."
+            },
+            "p3": {
+                "title": "Time saving",
+                "desc": "Automation of reporting and invoicing."
+            },
+            "p4": {
+                "title": "Modernization",
+                "desc": "Secure and intuitive Mobile First interface."
+            }
+        },
+        "agent": {
+            "title": "COMMERCIAL AGENT SIDE",
+            "f1_title": "1. Sales Management",
+            "f1_l1": "<strong>Pipeline:</strong> Visualize your \"In progress\" and \"Invoiced\" sales.",
+            "f1_l2": "<strong>Files:</strong> Centralize dossiers, dates, and participants.",
+            "f1_l3": "<strong>Agenda:</strong> Appointments synced to your calendar.",
+            "f2_title": "2. Auto Calculation",
+            "f2_l1": "<strong>Transparency:</strong> Automatic calculation of your net share.",
+            "f2_l2": "<strong>Tracking:</strong> Precise history of your monthly income.",
+            "f3_title": "3. Productivity",
+            "f3_l1": "<strong>Zero paperwork:</strong> PDF invoices generated in two clicks.",
+            "f3_l2": "<strong>Sharing:</strong> Direct sending from your phone."
+        },
+        "agency": {
+            "title": "AGENCY DIRECTOR SIDE",
+            "f1_title": "1. Overall Steering",
+            "f1_l1": "<strong>The pulse:</strong> Turnover dashboard and recent activity at a glance.",
+            "f1_l2": "<strong>Goals:</strong> Detailed annual progression gauges.",
+            "f1_l3": "<strong>Evolution:</strong> Analytical growth charts.",
+            "f2_title": "2. Management",
+            "f2_l1": "<strong>Linking:</strong> Instant attachment via \"Employee Code\".",
+            "f2_l2": "<strong>Overview:</strong> Management of cross-participations.",
+            "f3_title": "3. Reporting",
+            "f3_l1": "<strong>Operations:</strong> PDF/Excel exports for your meetings.",
+            "f3_l2": "<strong>Reports:</strong> Annual reports and individual performance."
+        },
+        "qr_title": "Ready for takeoff?",
+        "qr_desc": "Scan to discover ComImmo on iOS and Android"
+    },
+    "skills": {
+        "title": "Skills <span>Matrix</span>",
+        "col1_title": "My knowledge (tools)",
+        "col1_s1_title": "Systems Architecture & SoC",
+        "col1_s1_desc": "Understanding of heterogeneous structures (ARM/FPGA) and PS/PL interactions on Xilinx Zynq.",
+        "col1_s2_title": "Avionics Protocols & Buses",
+        "col1_s2_desc": "Mastery of physical and protocol layers: Serial, Synchronous, Full-Duplex.",
+        "col1_s3_title": "Simulation Engineering",
+        "col1_s3_desc": "Principles of state centralization (IFPM) and Hardware-in-the-Loop simulation.",
+        "col2_title": "My savoir-faire (actions)",
+        "col2_s1_title": "Design & Development",
+        "col2_s1_desc": "Programming in <strong>VHDL (FPGA)</strong> and <strong>C/C++ (Software/HMI)</strong> with hard real-time constraint management.",
+        "col2_s2_title": "Reverse Engineering & Audit",
+        "col2_s2_desc": "Analysis of undocumented systems using an oscilloscope to decode protocols and ensure digital spoofing.",
+        "col2_s3_title": "Steering & Management",
+        "col2_s3_desc": "Industrial project management (10 months) in autonomy and functional tutoring.",
+        "col3_title": "My soft skills (personality)",
+        "col3_s1_title": "Rigor & Precision",
+        "col3_s1_desc": "Methodical analysis capacity to respect critical time requirements (< 2.5 µs).",
+        "col3_s2_title": "Analytical Mindset",
+        "col3_s2_desc": "Technical curiosity and tenacity in the face of complex technological hurdles.",
+        "col3_s3_title": "Adaptability & Pedagogy",
+        "col3_s3_desc": "Ability to popularize technical concepts to collaborate with various trades."
+    },
+    "contact": {
+        "title": "Let's discuss our <span>future collaboration...</span>",
+        "desc": "I am currently looking for new technical challenges. Available from September 2026.",
+        "region": "Toulon Region, France",
+        "cv_btn": "Download my CV (PDF)",
+        "message_btn": "Send me a message"
+    },
+    "footer": {
+        "rights": "© 2026 Thibault L'HÉRITIER. All rights reserved."
+    }
+}

@@ -4,28 +4,28 @@
       <h2 
         class="section-title"
         v-motion-slide-visible-once-bottom
+        v-html="$t('skills.title')"
       >
-        Matrice de <span class="gradient-text">Compétences</span>
       </h2>
 
       <div class="matrix-grid">
         <!-- Savoirs (Outils) -->
         <div class="matrix-column" v-motion-slide-visible-once-bottom>
           <div class="column-header">
-            <h3>Mes savoirs (outils)</h3>
+            <h3>{{ $t('skills.col1_title') }}</h3>
           </div>
           <div class="column-body">
             <div class="skill-group">
-              <h4>Architecture Systèmes & SoC</h4>
-              <p>Compréhension des structures hétérogènes (ARM/FPGA) et des interactions PS/PL sur Xilinx Zynq.</p>
+              <h4>{{ $t('skills.col1_s1_title') }}</h4>
+              <p>{{ $t('skills.col1_s1_desc') }}</p>
             </div>
             <div class="skill-group">
-              <h4>Protocoles & Bus Avioniques</h4>
-              <p>Maîtrise des couches physiques et protocolaires : Série, Synchrone, Full-Duplex.</p>
+              <h4>{{ $t('skills.col1_s2_title') }}</h4>
+              <p>{{ $t('skills.col1_s2_desc') }}</p>
             </div>
             <div class="skill-group">
-              <h4>Ingénierie de Simulation</h4>
-              <p>Principes de centralisation des états (IFPM) et simulation Hardware-in-the-Loop.</p>
+              <h4>{{ $t('skills.col1_s3_title') }}</h4>
+              <p>{{ $t('skills.col1_s3_desc') }}</p>
             </div>
           </div>
         </div>
@@ -33,20 +33,20 @@
         <!-- Savoirs-faire (Actions) -->
         <div class="matrix-column accent" v-motion-slide-visible-once-bottom>
           <div class="column-header">
-            <h3>Mes savoir-faire (actions)</h3>
+            <h3>{{ $t('skills.col2_title') }}</h3>
           </div>
           <div class="column-body">
             <div class="skill-group">
-              <h4>Conception & Développement</h4>
-              <p>Programmation en <strong>VHDL (FPGA)</strong> et <strong>C/C++ (Logiciel/IHM)</strong> avec gestion des contraintes temps réel dur.</p>
+              <h4>{{ $t('skills.col2_s1_title') }}</h4>
+              <p v-html="$t('skills.col2_s1_desc')"></p>
             </div>
             <div class="skill-group">
-              <h4>Rétro-ingénierie & Audit</h4>
-              <p>Analyse de systèmes non documentés à l'oscilloscope pour décoder des protocoles et assurer le leurrage numérique.</p>
+              <h4>{{ $t('skills.col2_s2_title') }}</h4>
+              <p v-html="$t('skills.col2_s2_desc')"></p>
             </div>
             <div class="skill-group">
-              <h4>Pilotage & Management</h4>
-              <p>Gestion de projet industriel (10 mois) en autonomie et tutorat fonctionnel.</p>
+              <h4>{{ $t('skills.col2_s3_title') }}</h4>
+              <p>{{ $t('skills.col2_s3_desc') }}</p>
             </div>
           </div>
         </div>
@@ -54,20 +54,20 @@
         <!-- Savoirs-être (Personnalité) -->
         <div class="matrix-column" v-motion-slide-visible-once-bottom>
           <div class="column-header">
-            <h3>Mes savoir-être (personnalité)</h3>
+            <h3>{{ $t('skills.col3_title') }}</h3>
           </div>
           <div class="column-body">
             <div class="skill-group">
-              <h4>Rigueur & Précision</h4>
-              <p>Capacité d'analyse méthodique pour respecter les exigences temporelles critiques (&lt; 2,5 µs).</p>
+              <h4>{{ $t('skills.col3_s1_title') }}</h4>
+              <p>{{ $t('skills.col3_s1_desc') }}</p>
             </div>
             <div class="skill-group">
-              <h4>Esprit d'analyse</h4>
-              <p>Curiosité technique et ténacité face aux verrous technologiques complexes.</p>
+              <h4>{{ $t('skills.col3_s2_title') }}</h4>
+              <p>{{ $t('skills.col3_s2_desc') }}</p>
             </div>
             <div class="skill-group">
-              <h4>Adaptabilité & Pédagogie</h4>
-              <p>Capacité à vulgariser des concepts techniques pour collaborer avec divers corps de métier.</p>
+              <h4>{{ $t('skills.col3_s3_title') }}</h4>
+              <p>{{ $t('skills.col3_s3_desc') }}</p>
             </div>
           </div>
         </div>

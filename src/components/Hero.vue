@@ -1,55 +1,60 @@
 <template>
-  <section class="hero-section">
-    <img :src="heroBg" class="technical-bg" alt="Aeronautics background" />
-    <div class="section-overlay"></div>
-    <div class="container hero-content">
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-wrapper">
+      <img :src="heroBg" class="hero-image" alt="Cockpit background" />
+      <div class="overlay"></div>
+    </div>
+    
+    <div class="container hero-container">
       <div 
-        class="hero-text"
+        class="hero-content"
         v-motion
         :initial="{ opacity: 0, y: 50 }"
         :enter="{ opacity: 1, y: 0 }"
       >
-        <span class="badge status-pulse">Disponible à partir de Septembre 2026</span>
+        <span class="badge status-pulse">{{ $t('hero.status') }}</span>
         <h1 class="section-title">
-          Thibault <br />
-          <span class="gradient-text">L'HÉRITIER</span>
+          {{ $t('hero.title_thibault') }} <br />
+          <span class="gradient-text">{{ $t('hero.title_lheritier') }}</span>
         </h1>
-        <p class="hero-subtitle">
-          Ingénieur Systèmes Embarqués & Communicants. <br />
-          Passionné par la défense, l'aéronautique et la robotique. <br />
-          <span class="highlight-text">À la recherche de nouveaux défis techniques en tant qu'ingénieur système embarqué</span>
-        </p>
+        
+        <div class="hero-description">
+          <p class="subtitle">{{ $t('hero.subtitle') }}</p>
+          <p class="passion">{{ $t('hero.passion') }}</p>
+          <div class="search-box">
+            <span class="status-indicator"></span>
+            <p>{{ $t('hero.search') }}</p>
+          </div>
+        </div>
+
         <div class="hero-actions">
-          <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="btn-linkedin">
+          <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="btn-secondary">
             <LinkedinIcon :size="20" />
             LinkedIn
           </a>
-          <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv">
+          <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv-main">
             <FileTextIcon :size="20" />
-            Mon CV (PDF)
+            {{ $t('hero.cv_btn') }}
           </a>
-          <a href="mailto:thib.lh@icloud.com" class="btn-secondary">Me contacter</a>
+          <a href="#contact" class="btn-primary">
+            {{ $t('hero.contact_btn') }}
+            <ArrowRightIcon :size="20" />
+          </a>
         </div>
       </div>
-      
+
       <div 
-        class="hero-image-container"
+        class="hero-image-side"
         v-motion
-        :initial="{ opacity: 0, scale: 0.9 }"
-        :enter="{ opacity: 1, scale: 1, transition: { delay: 200 } }"
+        :initial="{ opacity: 0, scale: 0.8 }"
+        :enter="{ opacity: 1, scale: 1 }"
       >
-        <div class="image-wrapper">
-          <img 
-            v-if="photoExists" 
-            :src="profilePhotoUrl" 
-            alt="Thibault L'HÉRITIER" 
-            class="profile-img" 
-            @error="photoExists = false"
-          />
-          <div v-else class="placeholder-profile">
-            <UserIcon :size="120" />
+        <div class="photo-container">
+          <img v-if="photoExists" :src="profilePhotoUrl" alt="Thibault L'Héritier" class="profile-photo" />
+          <div v-else class="image-placeholder">
+            <UserIcon :size="100" />
           </div>
-          <div class="image-gradient"></div>
+          <div class="photo-glow"></div>
         </div>
       </div>
     </div>
@@ -58,9 +63,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import { ArrowRightIcon, UserIcon, LinkedinIcon, FileTextIcon } from 'lucide-vue-next'
-import heroBg from '../assets/hero-bg.png'
+import { LinkedinIcon, FileTextIcon, ArrowRightIcon, UserIcon } from 'lucide-vue-next'
 import profileImg from '../assets/profile.jpg'
+import heroBg from '../assets/hero-bg.png'
 
 const photoExists = ref(true)
 const profilePhotoUrl = profileImg

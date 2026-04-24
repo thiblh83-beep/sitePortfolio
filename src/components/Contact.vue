@@ -5,8 +5,8 @@
         class="contact-card"
         v-motion-slide-visible-once-bottom
       >
-        <h2 class="section-title">Discutons ensemble de notre <span class="gradient-text">future collaboration...</span></h2>
-        <p>Je suis actuellement à la recherche de nouveaux défis techniques. Disponible à partir de Septembre 2026.</p>
+        <h2 class="section-title" v-html="$t('contact.title')"></h2>
+        <p>{{ $t('contact.desc') }}</p>
         
         <div class="contact-methods">
           <a href="mailto:thib.lh@icloud.com" class="contact-item">
@@ -23,16 +23,16 @@
           </a>
           <div class="contact-item">
             <MapPinIcon :size="24" />
-            <span>Région Toulonnaise</span>
+            <span>{{ $t('contact.region') }}</span>
           </div>
           <a href="/sitePortfolio/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
             <FileTextIcon :size="20" />
-            Télécharger mon CV (PDF)
+            {{ $t('contact.cv_btn') }}
           </a>
         </div>
 
         <a href="mailto:thib.lh@icloud.com" class="btn-primary large-btn">
-          M'envoyer un message
+          {{ $t('contact.message_btn') }}
           <SendIcon :size="20" />
         </a>
       </div>

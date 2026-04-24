@@ -6,13 +6,13 @@
       <h2 
         class="section-title"
         v-motion-slide-visible-once-left
+        v-html="$t('projects.title')"
       >
-        Projets <span class="gradient-text">Sélectionnés</span>
       </h2>
 
       <div class="projects-grid">
         <div 
-          v-for="(project, index) in projects" 
+          v-for="(project, index) in translatedProjects" 
           :key="index"
           class="project-card-container"
           v-motion-slide-visible-once-bottom
@@ -39,7 +39,7 @@
                   <span v-for="tag in project.tech" :key="tag">{{ tag }}</span>
                 </div>
                 <div class="flip-hint">
-                  <InfoIcon :size="14" /> Cliquez pour en savoir plus
+                  <InfoIcon :size="14" /> {{ $t('projects.hint') }}
                 </div>
               </div>
             </div>
@@ -49,13 +49,13 @@
               <div class="back-content">
                 <div class="back-header">
                   <component :is="project.icon" :size="32" :style="{ color: project.color }" />
-                  <h3>Détails Techniques</h3>
+                  <h3>{{ $t('projects.details_btn') }}</h3>
                 </div>
                 <div class="full-description">
-                  <p v-for="(p, i) in project.fullDescription" :key="i">{{ p }}</p>
+                  <p>{{ project.fullDescription }}</p>
                 </div>
                 <div class="back-footer">
-                  <span class="click-return">Cliquez pour revenir</span>
+                  <span class="click-return">{{ $t('projects.back_btn') }}</span>
                 </div>
               </div>
             </div>
@@ -67,47 +67,48 @@
 </template>
 
 <script setup>
-import { reactive } from 'vue'
-import { CodeIcon, LayersIcon, ZapIcon, InfoIcon } from 'lucide-vue-next'
+import { reactive, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { CodeIcon, ZapIcon, InfoIcon } from 'lucide-vue-next'
 
-const projects = reactive([
+const { t } = useI18n()
+
+// Keep reactive state for flipping
+const states = reactive({
+  iffFlipped: false,
+  ifpmFlipped: false
+})
+
+const translatedProjects = computed(() => [
   {
-    title: 'Aéronef de la Marine',
-    tag: 'Simulateur IFF / Hawkeye',
+    title: t('hero.title_thibault') === 'Thibault' ? 'Aéronef de la Marine' : 'Navy Aircraft', // Small manual override for consistency if not in locale
+    tag: t('projects.iff.tag'),
     icon: ZapIcon,
-    description: 'Simulation du système IFF sur banc d\'intégration pour leurrage tactique du calculateur réel.',
+    description: t('projects.iff.desc'),
     highlights: [
-      'Simulateur fonctionnant à l’identique de l’équipement de vol',
-      'Maîtrise des protocoles d’échanges avioniques (normes IFF)',
-      'Développement C++ et intégration système complexe'
+      t('projects.iff.h1'),
+      t('projects.iff.h2'),
+      t('projects.iff.h3')
     ],
-    fullDescription: [
-      "Le système IFF (Identification Friend or Foe) est critique pour la sécurité aérienne militaire. Ce simulateur permet de tester les calculateurs embarqués san avoir besoin d'un aéronef en vol.",
-      "J'ai travaillé sur la simulation temps réel des couches protocolaires avioniques, assurant une fidélité parfaite avec le matériel réel.",
-      "Le projet inclut du leurrage tactique pour valider les algorithmes de décision du calculateur de mission dans des environnements électromagnétiques complexes."
-    ],
+    fullDescription: t('projects.iff.details'),
     tech: ['C++', 'Protocoles Avioniques', 'Intégration', 'Temps Réel'],
     color: '#3b82f6',
-    flipped: false
+    flipped: states.iffFlipped
   },
   {
-    title: 'Aéronef de la Marine',
-    tag: 'Simulateur IFPM / Hawkeye',
+    title: t('hero.title_thibault') === 'Thibault' ? 'Aéronef de la Marine' : 'Navy Aircraft',
+    tag: t('projects.ifpm.tag'),
     icon: CodeIcon,
-    description: 'Développement d\'une architecture hybride capable de simuler les pannes des sous-systèmes critiques.',
+    description: t('projects.ifpm.desc'),
     highlights: [
-      'Architecture Logiciel (PC) + Carte électronique (FPGA)',
-      'Interfaçage via bus propriétaire militaire complexe',
-      'Décryptage du fonctionnement par rétro-ingénierie'
+      t('projects.ifpm.h1'),
+      t('projects.ifpm.h2'),
+      t('projects.ifpm.h3')
     ],
-    fullDescription: [
-      "L'IFPM est au cœur de la gestion de puissance et des pannes de l'aéronef Hawkeye. Ce simulateur hybride combine puissance logicielle et précision électronique.",
-      "J'ai conçu la logique VHDL pour l'interfaçage avec les bus de données militaires propriétaires à très haute vitesse.",
-      "Un travail conséquent de rétro-ingénierie a été nécessaire pour décoder les signaux et modéliser correctement les modes de défaillance."
-    ],
+    fullDescription: t('projects.ifpm.details'),
     tech: ['VHDL', 'FPGA', 'C++', 'Temps Réel', 'Rétro-ingénierie'],
     color: '#ea580c',
-    flipped: false
+    flipped: states.ifpmFlipped
   }
 ])
 </script>

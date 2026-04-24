@@ -1,12 +1,20 @@
 <template>
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-left">
-        <p>© 2026 Thibault L'HÉRITIER. All rights reserved.</p>
-      </div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank">LinkedIn</a>
-        <a href="#">GitHub</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-dot"></span>
+          Thibault
+        </div>
+        <p class="copyright">{{ $t('footer.rights') }}</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" title="LinkedIn">
+            <LinkedinIcon :size="20" />
+          </a>
+          <a href="mailto:thib.lh@icloud.com" title="Email">
+            <MailIcon :size="20" />
+          </a>
+        </div>
       </div>
     </div>
   </footer>
