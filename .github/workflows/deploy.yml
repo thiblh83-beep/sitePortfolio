@@ -1,11 +1,15 @@
+# Simple GitHub Pages Deployment Workflow
 name: Deploy to GitHub Pages
+
 on:
   push:
     branches: 'main'
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   deploy:
     environment:

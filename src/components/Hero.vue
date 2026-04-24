@@ -9,7 +9,7 @@
         :initial="{ opacity: 0, y: 50 }"
         :enter="{ opacity: 1, y: 0 }"
       >
-        <span class="badge status-pulse">Open to work : Août 2026</span>
+        <span class="badge status-pulse">Août 2026 à Septembre 2026</span>
         <h1 class="section-title">
           Thibault <br />
           <span class="gradient-text">L'HÉRITIER</span>
@@ -24,7 +24,7 @@
             <LinkedinIcon :size="20" />
             LinkedIn
           </a>
-          <a :href="cvUrl" download class="btn-cv">
+          <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv">
             <FileTextIcon :size="20" />
             Mon CV (PDF)
           </a>
@@ -64,7 +64,7 @@ import profileImg from '../assets/profile.jpg'
 
 const photoExists = ref(true)
 const profilePhotoUrl = profileImg
-const cvUrl = './CV_Thibault_LHERITIER.pdf'
+const cvUrl = '/CV_Thibault_LHERITIER.pdf'
 </script>
 
 <style scoped>

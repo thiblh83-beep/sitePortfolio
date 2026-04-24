@@ -7,7 +7,7 @@
         class="about-content"
         v-motion-slide-visible-once-left
       >
-        <h2 class="section-title">À propos de <span class="gradient-text">moi...</span></h2>
+        <h2 class="section-title">À propos de <span class="gradient-text">moi :</span></h2>
         <div class="prose">
           <p>
             Je suis <strong>Thibault L'Héritier</strong>, Ingénieur en Systèmes Embarqués. 
@@ -16,8 +16,8 @@
           </p>
           <p>
             Mon expertise se situe à la charnière entre le matériel et le logiciel : 
-            je conçois aussi bien l'architecture électronique (<strong>FPGA, VHDL</strong>) 
-            que les couches logicielles de haut niveau (<strong>C++, Réseaux</strong>) 
+            je conçois aussi bien les architectures matérielles 
+            que les couches logicielles 
             pour créer des systèmes complets et cohérents.
           </p>
           <p>
@@ -32,11 +32,11 @@
         class="future-content"
         v-motion-slide-visible-once-right
       >
-        <h2 class="section-title">La <span class="gradient-text">suite ... :</span></h2>
+        <h2 class="section-title">Ma <span class="gradient-text">vision :</span></h2>
         <div class="prose">
           <p>
             À travers ce parcours, je recherche un poste dans la conception et le développement de systèmes critiques, 
-            me permettant de mettre en pratique ma double compétence matérielle et logicielle (<strong>FPGA / CPU</strong>) 
+            me permettant de mettre en pratique ma double compétence matérielle et logicielle 
             tout en continuant à relever des défis techniques complexes.
           </p>
           <p>

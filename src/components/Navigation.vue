@@ -13,7 +13,7 @@
         <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="nav-social" title="LinkedIn">
           <LinkedinIcon :size="20" />
         </a>
-            <a href="./CV_Thibault_LHERITIER.pdf" download class="btn-cv">
+            <a href="/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
               <FileTextIcon :size="18" />
               CV (PDF)
             </a>

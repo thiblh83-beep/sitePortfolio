@@ -25,7 +25,7 @@
             <MapPinIcon :size="24" />
             <span>Région Toulonnaise</span>
           </div>
-          <a href="./CV_Thibault_LHERITIER.pdf" download class="btn-cv">
+          <a href="/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
             <FileTextIcon :size="20" />
             Télécharger mon CV (PDF)
           </a>

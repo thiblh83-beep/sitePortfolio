@@ -110,7 +110,7 @@
           <p>Scannez pour découvrir ComImmo sur iOS et Android</p>
         </div>
         <div class="qr-box">
-          <img src="/src/assets/comimmo-qr.jpg" alt="QR Code ComImmo" class="qr-img" />
+          <img src="/src/assets/comimmo-qr.png" alt="QR Code ComImmo" class="qr-img" />
         </div>
       </div>
     </div>
@@ -290,6 +290,7 @@ const pillars = [
   left: 0;
   color: var(--accent-color);
 }
+
 
 .qr-cta {
   display: flex;
