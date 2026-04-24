@@ -43,7 +43,7 @@
 
 <script setup>
 import aiaLogo from '../assets/aia-logo.png'
-import pciLogo from '../assets/pci-logo.png'
+import pciLogo from '../assets/pci-logo.jpg'
 import orangeLogo from '../assets/orange-logo.png'
 import roboticsBg from '../assets/robotics-bg.png'
 

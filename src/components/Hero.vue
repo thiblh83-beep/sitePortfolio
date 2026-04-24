@@ -9,7 +9,7 @@
         :initial="{ opacity: 0, y: 50 }"
         :enter="{ opacity: 1, y: 0 }"
       >
-        <span class="badge status-pulse">Août 2026 à Septembre 2026</span>
+        <span class="badge status-pulse">Disponible à partir de Septembre 2026</span>
         <h1 class="section-title">
           Thibault <br />
           <span class="gradient-text">L'HÉRITIER</span>
@@ -64,7 +64,7 @@ import profileImg from '../assets/profile.jpg'
 
 const photoExists = ref(true)
 const profilePhotoUrl = profileImg
-const cvUrl = '/CV_Thibault_LHERITIER.pdf'
+const cvUrl = '/sitePortfolio/CV_Thibault_LHERITIER.pdf'
 </script>
 
 <style scoped>

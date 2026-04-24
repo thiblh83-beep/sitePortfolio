@@ -6,7 +6,7 @@
         v-motion-slide-visible-once-bottom
       >
         <h2 class="section-title">Discutons ensemble de notre <span class="gradient-text">future collaboration...</span></h2>
-        <p>Je suis actuellement à la recherche de nouveaux challenges en tant qu'Ingénieur Système ou Logiciel pour Août 2026.</p>
+        <p>Je suis actuellement à la recherche de nouveaux défis techniques. Disponible à partir de Septembre 2026.</p>
         
         <div class="contact-methods">
           <a href="mailto:thib.lh@icloud.com" class="contact-item">
@@ -25,7 +25,7 @@
             <MapPinIcon :size="24" />
             <span>Région Toulonnaise</span>
           </div>
-          <a href="/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
+          <a href="/sitePortfolio/CV_Thibault_LHERITIER.pdf" target="_blank" rel="noopener noreferrer" download class="btn-cv">
             <FileTextIcon :size="20" />
             Télécharger mon CV (PDF)
           </a>
