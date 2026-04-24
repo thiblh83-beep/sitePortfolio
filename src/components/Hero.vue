@@ -1,13 +1,10 @@
 <template>
   <section id="hero" class="hero-section">
-    <div class="hero-bg-wrapper">
-      <img :src="heroBg" class="hero-image" alt="Cockpit background" />
-      <div class="overlay"></div>
-    </div>
-    
-    <div class="container hero-container">
+    <img :src="heroBg" class="technical-bg" alt="Aeronautics background" />
+    <div class="section-overlay"></div>
+    <div class="container hero-content">
       <div 
-        class="hero-content"
+        class="hero-text"
         v-motion
         :initial="{ opacity: 0, y: 50 }"
         :enter="{ opacity: 1, y: 0 }"
@@ -17,44 +14,42 @@
           {{ $t('hero.title_thibault') }} <br />
           <span class="gradient-text">{{ $t('hero.title_lheritier') }}</span>
         </h1>
-        
-        <div class="hero-description">
-          <p class="subtitle">{{ $t('hero.subtitle') }}</p>
-          <p class="passion">{{ $t('hero.passion') }}</p>
-          <div class="search-box">
-            <span class="status-indicator"></span>
-            <p>{{ $t('hero.search') }}</p>
-          </div>
-        </div>
-
+        <p class="hero-subtitle">
+          {{ $t('hero.subtitle') }} <br />
+          {{ $t('hero.passion') }} <br />
+          <span class="highlight-text">{{ $t('hero.search') }}</span>
+        </p>
         <div class="hero-actions">
-          <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="btn-secondary">
+          <a href="https://www.linkedin.com/in/thibault-l-h%C3%A9ritier-005a18246" target="_blank" class="btn-linkedin">
             <LinkedinIcon :size="20" />
             LinkedIn
           </a>
-          <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv-main">
+          <a :href="cvUrl" target="_blank" rel="noopener noreferrer" download class="btn-cv">
             <FileTextIcon :size="20" />
             {{ $t('hero.cv_btn') }}
           </a>
-          <a href="#contact" class="btn-primary">
-            {{ $t('hero.contact_btn') }}
-            <ArrowRightIcon :size="20" />
-          </a>
+          <a href="mailto:thib.lh@icloud.com" class="btn-secondary">{{ $t('hero.contact_btn') }}</a>
         </div>
       </div>
-
+      
       <div 
-        class="hero-image-side"
+        class="hero-image-container"
         v-motion
-        :initial="{ opacity: 0, scale: 0.8 }"
-        :enter="{ opacity: 1, scale: 1 }"
+        :initial="{ opacity: 0, scale: 0.9 }"
+        :enter="{ opacity: 1, scale: 1, transition: { delay: 200 } }"
       >
-        <div class="photo-container">
-          <img v-if="photoExists" :src="profilePhotoUrl" alt="Thibault L'Héritier" class="profile-photo" />
-          <div v-else class="image-placeholder">
-            <UserIcon :size="100" />
+        <div class="image-wrapper">
+          <img 
+            v-if="photoExists" 
+            :src="profilePhotoUrl" 
+            :alt="$t('hero.title_thibault') + ' ' + $t('hero.title_lheritier')" 
+            class="profile-img" 
+            @error="photoExists = false"
+          />
+          <div v-else class="placeholder-profile">
+            <UserIcon :size="120" />
           </div>
-          <div class="photo-glow"></div>
+          <div class="image-gradient"></div>
         </div>
       </div>
     </div>
@@ -63,9 +58,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import { LinkedinIcon, FileTextIcon, ArrowRightIcon, UserIcon } from 'lucide-vue-next'
-import profileImg from '../assets/profile.jpg'
+import { UserIcon, LinkedinIcon, FileTextIcon } from 'lucide-vue-next'
 import heroBg from '../assets/hero-bg.png'
+import profileImg from '../assets/profile.jpg'
 
 const photoExists = ref(true)
 const profilePhotoUrl = profileImg

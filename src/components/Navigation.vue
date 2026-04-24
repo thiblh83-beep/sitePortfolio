@@ -140,6 +140,7 @@ nav {
 }
 
 .lang-toggle {
+  margin-left: 1rem;
   background: rgba(56, 189, 248, 0.1);
   color: var(--accent-color);
   border: 1px solid rgba(56, 189, 248, 0.2);
