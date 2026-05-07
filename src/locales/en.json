@@ -24,8 +24,8 @@
         "p2": "My experiences lie at the intersection of <span class='highlight-hw'>hardware</span> and <span class='highlight-sw'>software</span>: I design both hardware architectures and software layers to create <span class='highlight-interactive'>complete and coherent</span> systems.",
         "p3": "Rigorous and methodical, my approach is based on reliability and mastery of time constraints. I focus on understanding the inner workings of equipment (reverse engineering) to develop robust solutions capable of interfacing with existing technologies.",
         "vision_p1": "Through this journey, I am seeking a position in the design and development of critical systems, allowing me to apply my <span class='highlight-interactive'>dual hardware and software skills</span> while continuing to take on complex technical challenges.",
-        "vision_p2": "I wish to contribute to the development of high-performance technological solutions, whether they be simulators, test tools, or complete embedded architectures.",
-        "vision_p3_expanded": "My core motivation lies in technological innovation and the methodical rigor of engineering. I have a particular interest in the <strong>aeronautics, automotive, and robotics</strong> sectors, where precision and reliability are paramount.",
+        "vision_p2": "The goal is to contribute to the development of high-performance technological solutions, whether they be simulators, test tools, or complete embedded architectures.",
+        "vision_p3_expanded": "My core motivation lies in technological innovation and the methodical rigor of engineering. I have a particular interest in the <strong>aeronautics, automotive, and robotics</strong> sectors, as well as in the field of <strong>automation</strong>, where precision and reliability are paramount.",
         "open_question": "Ready to discuss your next embedded challenges?"
     },
     "experience": {
@@ -160,7 +160,7 @@
         "col1_s2_title": "Avionics Protocols & Buses",
         "col1_s2_desc": "Mastery of physical and protocol layers: Serial, Synchronous, Full-Duplex.",
         "col1_s3_title": "Simulation Engineering",
-        "col1_s3_desc": "Principles of state centralization (IFPM) and Hardware-in-the-Loop simulation.",
+        "col1_s3_desc": "Development of two avionics subsystem simulators and integration of these simulators onto an already operational platform.",
         "col2_title": "My savoir-faire (actions)",
         "col2_s1_title": "Design & Development",
         "col2_s1_desc": "Programming in <strong>VHDL (FPGA)</strong> and <strong>C/C++ (Software/HMI)</strong> with hard real-time constraint management.",

@@ -24,8 +24,8 @@
         "p2": "Mes expériences se situent à la charnière entre le <span class='highlight-hw'>matériel</span> et le <span class='highlight-sw'>logiciel</span> : je conçois aussi bien les architectures matérielles que les couches logicielles pour créer des systèmes <span class='highlight-interactive'>complets et cohérents</span>.",
         "p3": "Rigoureux et méthodique, mon approche repose sur la fiabilité et la maîtrise des contraintes temporelles. Je m'attache à comprendre le fonctionnement intime des équipements (rétro-ingénierie) pour développer des solutions robustes, capables de s'interfacer avec des technologies existantes.",
         "vision_p1": "À travers ce parcours, je recherche un poste dans la conception et le développement de systèmes critiques, me permettant de mettre en pratique ma <span class='highlight-interactive'>double compétence matérielle et logicielle</span> tout en continuant à relever des défis techniques complexes.",
-        "vision_p2": "Je souhaite contribuer à l'élaboration de solutions technologiques performantes, qu'il s'agisse de simulateurs, d'outils de test ou d'architectures embarquées complètes.",
-        "vision_p3_expanded": "Ma motivation profonde réside dans l'innovation technologique et la rigueur méthodique de l'ingénierie. Je porte un intérêt tout particulier aux secteurs de <strong>l'aéronautique, de l'automobile et de la robotique</strong>, là où la précision et la fiabilité sont primordiales.",
+        "vision_p2": "L'objectif est de contribuer à l'élaboration de solutions technologiques performantes, qu'il s'agisse de simulateurs, d'outils de test ou d'architectures embarquées complètes.",
+        "vision_p3_expanded": "Ma motivation profonde réside dans l'innovation technologique et la rigueur méthodique de l'ingénierie. Je porte un intérêt tout particulier aux secteurs de <strong>l'aéronautique, de l'automobile et de la robotique</strong>, ainsi qu'aux domaines de <strong>l'automatisation</strong>, là où la précision et la fiabilité sont primordiales.",
         "open_question": "Prêt à échanger sur vos prochains défis embarqués ?"
     },
     "experience": {
@@ -160,7 +160,7 @@
         "col1_s2_title": "Protocoles & Bus Avioniques",
         "col1_s2_desc": "Maîtrise des couches physiques et protocolaires : Série, Synchrone, Full-Duplex.",
         "col1_s3_title": "Ingénierie de Simulation",
-        "col1_s3_desc": "Principes de centralisation des états (IFPM) et simulation Hardware-in-the-Loop.",
+        "col1_s3_desc": "Développement de deux simulateurs de sous-systèmes avioniques et intégration de ces simulateurs sur une plateforme déjà opérationnelle.",
         "col2_title": "Mes savoir-faire (actions)",
         "col2_s1_title": "Conception & Développement",
         "col2_s1_desc": "Programmation en <strong>VHDL (FPGA)</strong> et <strong>C/C++ (Logiciel/IHM)</strong> avec gestion des contraintes temps réel dur.",
