@@ -20,8 +20,8 @@
     "about": {
         "title": "About <span>me:</span>",
         "vision_title": "My <span>vision:</span>",
-        "p1": "I am <strong class='text-glow'>Thibault L'Héritier</strong>, an Embedded Systems Engineer. The projects I've led are mainly related to simulator development and critical systems integration within the defense aeronautics sector.",
-        "p2": "My expertise lies at the intersection of <span class='highlight-hw'>hardware</span> and <span class='highlight-sw'>software</span>: I design both hardware architectures and software layers to create <span class='highlight-interactive'>complete and coherent</span> systems.",
+        "p1": "I am <strong class='text-glow'>Thibault L'héritier</strong>, an Apprentice Embedded Systems Engineer. The projects I've led are mainly related to simulator development and critical systems integration within the defense aeronautics sector.",
+        "p2": "My experiences lie at the intersection of <span class='highlight-hw'>hardware</span> and <span class='highlight-sw'>software</span>: I design both hardware architectures and software layers to create <span class='highlight-interactive'>complete and coherent</span> systems.",
         "p3": "Rigorous and methodical, my approach is based on reliability and mastery of time constraints. I focus on understanding the inner workings of equipment (reverse engineering) to develop robust solutions capable of interfacing with existing technologies.",
         "vision_p1": "Through this journey, I am seeking a position in the design and development of critical systems, allowing me to apply my <span class='highlight-interactive'>dual hardware and software skills</span> while continuing to take on complex technical challenges.",
         "vision_p2": "I wish to contribute to the development of high-performance technological solutions, whether they be simulators, test tools, or complete embedded architectures.",
