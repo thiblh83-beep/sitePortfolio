@@ -1,11 +1,11 @@
 :root {
-  --bg-color: #050a15;
+  --bg-color: #0a192f;
   --text-primary: #ffffff;
   --text-secondary: #a1b1c1;
   --accent-gradient: linear-gradient(135deg, #007bff 0%, #00d4ff 100%);
   --accent-color: #00d4ff;
-  --card-bg: rgba(15, 25, 45, 0.7);
-  --card-hover: rgba(25, 35, 65, 0.9);
+  --card-bg: rgba(2, 12, 27, 0.7);
+  --card-hover: rgba(17, 34, 64, 0.9);
   --font-main: 'Plus Jakarta Sans', sans-serif;
   --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   --technical-grid: radial-gradient(circle, rgba(0, 123, 255, 0.1) 1px, transparent 1px);
