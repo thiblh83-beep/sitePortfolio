@@ -18,17 +18,14 @@
         "contact_btn": "Contact me"
     },
     "about": {
-        "title": "Who am <span>I?</span>",
-        "intro": "As an <strong>Embedded Systems Engineer</strong>, I design the intelligence of critical systems.",
-        "trait1_title": "Systemic",
-        "trait1_desc": "Bridging the gap between Hardware (FPGA, VHDL) and Software (C++, Networks).",
-        "trait2_title": "Communicative",
-        "trait2_desc": "I translate complex requirements into clear, reliable architectures.",
-        "trait3_title": "Analytical",
-        "trait3_desc": "I enjoy diving deep into systems (reverse engineering) to master every timing constraint.",
-        "vision_title": "Looking <span>Forward</span>",
-        "vision_highlight": "Defense | Aeronautics | Robotics",
-        "vision_desc": "I am seeking complex technological challenges where precision and reliability are absolute. My goal: to build cutting-edge simulators, test benches, and embedded architectures.",
+        "title": "About <span>me:</span>",
+        "vision_title": "My <span>vision:</span>",
+        "p1": "I am <strong class='text-glow'>Thibault L'Héritier</strong>, an Embedded Systems Engineer. The projects I've led are mainly related to simulator development and critical systems integration within the defense aeronautics sector.",
+        "p2": "My expertise lies at the intersection of <span class='highlight-hw'>hardware</span> and <span class='highlight-sw'>software</span>: I design both hardware architectures and software layers to create <span class='highlight-interactive'>complete and coherent</span> systems.",
+        "p3": "Rigorous and methodical, my approach is based on reliability and mastery of time constraints. I focus on understanding the inner workings of equipment (reverse engineering) to develop robust solutions capable of interfacing with existing technologies.",
+        "vision_p1": "Through this journey, I am seeking a position in the design and development of critical systems, allowing me to apply my <span class='highlight-interactive'>dual hardware and software skills</span> while continuing to take on complex technical challenges.",
+        "vision_p2": "I wish to contribute to the development of high-performance technological solutions, whether they be simulators, test tools, or complete embedded architectures.",
+        "vision_p3_expanded": "My core motivation lies in technological innovation and the methodical rigor of engineering. I have a particular interest in the <strong>aeronautics, automotive, and robotics</strong> sectors, where precision and reliability are paramount.",
         "open_question": "Ready to discuss your next embedded challenges?"
     },
     "experience": {

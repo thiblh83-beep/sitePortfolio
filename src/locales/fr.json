@@ -18,17 +18,14 @@
         "contact_btn": "Me contacter"
     },
     "about": {
-        "title": "Qui suis-je <span>?</span>",
-        "intro": "Ingénieur en <strong>Systèmes Embarqués</strong>, je conçois l'intelligence des systèmes critiques.",
-        "trait1_title": "Systémique",
-        "trait1_desc": "À la charnière entre le Hardware (FPGA, VHDL) et le Software (C++, Réseaux).",
-        "trait2_title": "Communicant",
-        "trait2_desc": "Je traduis les exigences complexes en architectures claires et fiables.",
-        "trait3_title": "Analytique",
-        "trait3_desc": "J'aime plonger au cœur des systèmes (rétro-ingénierie) pour maîtriser chaque contrainte temporelle.",
-        "vision_title": "Vers <span>l'avenir</span>",
-        "vision_highlight": "Défense | Aéronautique | Robotique",
-        "vision_desc": "Je recherche des défis technologiques complexes où la précision et la fiabilité sont absolues. Mon but : bâtir des simulateurs, des bancs de test et des architectures embarquées de pointe.",
+        "title": "À propos de <span>moi :</span>",
+        "vision_title": "Ma <span>vision :</span>",
+        "p1": "Je suis <strong class='text-glow'>Thibault L'Héritier</strong>, Ingénieur en <span class='highlight-interactive'>Systèmes Embarqués</span>. Les projets que j'ai menés sont principalement des projets de développement de simulateurs et d'intégration de systèmes critiques dans le milieu de l'aéronautique de défense.",
+        "p2": "Mon expertise se situe à la charnière entre le <span class='highlight-hw'>matériel</span> et le <span class='highlight-sw'>logiciel</span> : je conçois aussi bien les architectures matérielles que les couches logicielles pour créer des systèmes <span class='highlight-interactive'>complets et cohérents</span>.",
+        "p3": "Rigoureux et méthodique, mon approche repose sur la fiabilité et la maîtrise des contraintes temporelles. Je m'attache à comprendre le fonctionnement intime des équipements (rétro-ingénierie) pour développer des solutions robustes, capables de s'interfacer avec des technologies existantes.",
+        "vision_p1": "À travers ce parcours, je recherche un poste dans la conception et le développement de systèmes critiques, me permettant de mettre en pratique ma <span class='highlight-interactive'>double compétence matérielle et logicielle</span> tout en continuant à relever des défis techniques complexes.",
+        "vision_p2": "Je souhaite contribuer à l'élaboration de solutions technologiques performantes, qu'il s'agisse de simulateurs, d'outils de test ou d'architectures embarquées complètes.",
+        "vision_p3_expanded": "Ma motivation profonde réside dans l'innovation technologique et la rigueur méthodique de l'ingénierie. Je porte un intérêt tout particulier aux secteurs de <strong>l'aéronautique, de l'automobile et de la robotique</strong>, là où la précision et la fiabilité sont primordiales.",
         "open_question": "Prêt à échanger sur vos prochains défis embarqués ?"
     },
     "experience": {
